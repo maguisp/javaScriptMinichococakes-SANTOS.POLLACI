@@ -1,0 +1,28 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+$subTitulo: dark;
+
+h1 {
+    @if $subTitulo == dark {
+        color: white;
+        background-color: black;
+        
+    } @else if $subTitulo == light {
+        color: black;
+        background-color: white;        
+    } @else {
+        color: pink;
+        background-color: wheat;
+    }
+        
+} 
+
+
+
+

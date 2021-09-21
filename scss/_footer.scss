@@ -1,0 +1,61 @@
+$footerBackgroundColor: black;
+$footerBoxSize: 400px;
+$footerColor: white;
+$colorBotonDanger: black;
+$col: white;
+$bg: black;
+
+
+
+.site-footer{
+    background-color: $footerBackgroundColor;
+    color: $footerColor;
+    width: ($footerBoxSize + 175) * 2;
+    height: $footerBoxSize - 300;
+    
+}
+
+.redes-sociales a i{
+    color: white;
+    font-size: 2rem;
+
+}
+
+@mixin boton {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid black;
+    
+}
+
+
+/* each   */
+
+@each $background in black white #f1567d {
+    .bg--#{$background} {
+        background-color: $background;
+
+    }
+    
+}
+
+/* maps */
+
+$red-social: (
+    fbk: black,
+    ig: black,
+);
+
+@each $nombre, $valor in $red-social{
+    .icon-#{$nombre}{
+        background-color: $valor;
+        color: white;
+        padding: 16px;
+        border-radius: 5px;
+    }
+}
+
+.container__footer--bkgBlack{
+    margin-top: 100px;
+}
+

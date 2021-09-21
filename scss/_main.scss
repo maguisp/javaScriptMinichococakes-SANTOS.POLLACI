@@ -1,0 +1,102 @@
+.gridMenu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-content: center;
+    height: 500px;
+    width: auto;  
+      
+
+}
+.container__main--border{
+    border: 5px solid black;
+    
+}
+.main__menuList--colorGray{
+    background-color: gray;
+}
+.menuList__product--colorBlack{
+    color:black;
+    font-size: large;
+    text-align: center;
+    margin-top: 15px;
+    
+}
+
+.text-center {
+    text-align: center;
+}
+
+.listaPostres {
+    width: 95%;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.hijo{
+    margin: 2rem 0rem;
+}
+
+.titulo__producto{
+    margin: 10px;
+    padding: 10px;
+}
+
+.boton{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50px;
+    
+}
+
+.boton:hover{
+    background-color: gray;
+    color: white;
+    transition: .1s ease-in-out;
+}
+
+
+/* extend 
+
+.img__full {
+    width: 50%;
+    height: 50%;
+}
+
+.img__full--dark {
+    @extend .img__full;
+    background: black;
+}
+*/
+
+/* mixin */
+@mixin boton ($bg, $ancho:30px) {
+    background-color:$bg;
+    padding: $ancho;    
+    color: white;
+    text-decoration: none;        
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 100px;     
+    
+}
+
+.boton-1{
+    @include boton(black, 20px);
+}
+
+.boton-2{
+    @include boton(black, 20px);
+
+}
+.boton-3{
+    @include boton(black, 20px);
+
+}
+
+

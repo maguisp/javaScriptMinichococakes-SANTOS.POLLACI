@@ -1,0 +1,87 @@
+@media (min-width: 320px){
+    .Grid-padre{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2rem;
+    }
+    .mainTitle{
+        font-size: 30px;
+        text-align: center;
+
+    }
+    #h1{
+        font-size: 10px;
+        text-align: center;
+
+    }
+    
+    
+}
+
+@media (min-width: 375px){
+    .Grid-padre{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .mainTitle{
+        font-size: 30px;
+        text-align: center;
+
+    }
+    #h1{
+        font-size: 10px;
+        text-align: center;
+
+    }
+}
+
+@media (min-width: 425px){
+    .Grid-padre{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    .mainTitle{
+        font-size: 50px;
+        text-align: center;
+        
+    }
+    
+    #h1{
+        font-size: x-large;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 768px){
+    .Grid-padre{
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    .mainTitle{
+        font-size: 75px;
+        text-align: center;
+        
+    }
+    
+    #h1{
+        font-size: x-large;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1440px){
+    .Grid-padre{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .mainTitle{
+        font-size: 75px;
+        text-align: center;
+        
+    }
+    
+    #h1{
+        font-size: x-large;
+        text-align: center;
+    }
+}

@@ -1,0 +1,22 @@
+@import "body";
+@import "footer";
+@import "header";
+@import "main";
+@import "variables";
+@import "mediaQueries";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+img{
+    width: 200px;
+    height: auto;
+}
+
+
+
