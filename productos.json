@@ -1,0 +1,65 @@
+[
+    {
+    "id": 1, 
+    "nombre": "Cheesecake", 
+    "tipo": "postre", 
+    "desc": "Tu torta preferida en pote!", 
+    "precio": 380, 
+    "tamaño": "250cc", 
+    "img": "img/cheesecakeAlargada.jpeg", 
+    "cantidad": 10
+    },
+    {
+    "id": 2, 
+    "nombre": "Chococake", 
+    "tipo": "postre", 
+    "desc": "Tu torta preferida en pote!", 
+    "precio": 390, 
+   "tamaño": "250cc", 
+    "img": "./img/chocoCakeAlargada.jpeg", 
+    "cantidad": 10
+    },
+    {
+    "id": 3, 
+    "nombre": "Chocotorta", 
+    "tipo": "postre", 
+    "desc": "Tu torta preferida en pote!", 
+    "precio": 320, 
+   "tamaño": "250cc", 
+    "img": "./img/chocotortaAlargada.jpeg", 
+    "cantidad": 10
+    },
+    {
+    "id": 4, 
+    "nombre": "Flan al caramelo", 
+    "tipo": "postre", 
+    "desc": "Tu torta preferida en pote!", 
+    "precio": 300, 
+   "tamaño": "250cc", 
+    "img": "./img/flanAlargada.jpeg", 
+    "cantidad": 10
+    
+    },
+    {
+    "id": 5, 
+    "nombre": "Tiramisu", 
+    "tipo": "postre", 
+    "desc": "Tu torta preferida en pote!", 
+    "precio": 350, 
+   "tamaño": "250cc", 
+    "img": "./img/tiramisuAlargada.jpeg", 
+    "cantidad": 10
+    
+    },
+    {
+        "id": 6, 
+        "nombre": "Postre personalizado", 
+        "tipo": "postre", 
+        "desc": "Tu torta preferida en pote!", 
+        "precio": 500, 
+       "tamaño": "250cc", 
+        "img": "./img/degustacion.jpg", 
+        "cantidad": 10
+        
+        }
+]

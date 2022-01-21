@@ -1,61 +1,83 @@
+
 $footerBackgroundColor: black;
-$footerBoxSize: 400px;
-$footerColor: white;
+$itemsColor: rgb(15, 15, 15);
 $colorBotonDanger: black;
 $col: white;
-$bg: black;
 
 
 
-.site-footer{
+
+
+/* pie de pagina nuevo responsive */
+
+.pie-pagina{
+    width: 100%;
     background-color: $footerBackgroundColor;
-    color: $footerColor;
-    width: ($footerBoxSize + 175) * 2;
-    height: $footerBoxSize - 300;
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-
-.redes-sociales a i{
-    color: white;
-    font-size: 2rem;
+.pie-pagina .grupo-1 .box img{
+    width: 110px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: $col;
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #e2dddd;
+    margin-bottom: 10px;
 
 }
-
-@mixin boton {
+.pie-pagina .grupo-1 .red-social a{
     display: inline-block;
-    padding: 10px;
-    border: 1px solid black;
-    
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: $col;
+    margin-right: 10px;
+    background-color: $itemsColor;
+    text-align: center;
+    transition: all 300ms ease;
+
 }
-
-
-/* each   */
-
-@each $background in black white #f1567d {
-    .bg--#{$background} {
-        background-color: $background;
-
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: pink;
+}
+.pie-pagina .grupo-2{
+    background-color: $itemsColor;
+    padding: 15px 10px;
+    text-align: center;
+    color: $col;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    
     }
     
 }
-
-/* maps */
-
-$red-social: (
-    fbk: black,
-    ig: black,
-);
-
-@each $nombre, $valor in $red-social{
-    .icon-#{$nombre}{
-        background-color: $valor;
-        color: white;
-        padding: 16px;
-        border-radius: 5px;
-    }
-}
-
-.container__footer--bkgBlack{
-    margin-top: 100px;
-}
-

@@ -1,26 +1,3 @@
-.gridMenu{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    justify-content: center;
-    height: 500px;
-    width: auto;  
-      
-
-}
-.container__main--border{
-    border: 5px solid black;
-    
-}
-.main__menuList--colorGray{
-    background-color: gray;
-}
-.menuList__product--colorBlack{
-    color:black;
-    font-size: large;
-    text-align: center;
-    margin-top: 15px;
-    
-}
 
 .text-center {
     text-align: center;
@@ -33,17 +10,16 @@
     margin-right: auto;
 }
 
-
-.hijo{
+.hijo {
     margin: 2rem 0rem;
 }
 
-.titulo__producto{
+.titulo__producto {
     margin: 10px;
     padding: 10px;
 }
 
-.boton{
+.boton {
     background-color: black;
     color: white;
     text-decoration: none;
@@ -51,52 +27,233 @@
     text-transform: uppercase;
     font-weight: bold;
     margin-top: 50px;
-    
-}
-
-.boton:hover{
-    background-color: gray;
-    color: white;
-    transition: .1s ease-in-out;
 }
 
 
-/* extend 
-
-.img__full {
-    width: 50%;
-    height: 50%;
-}
-
-.img__full--dark {
-    @extend .img__full;
-    background: black;
-}
-*/
 
 /* mixin */
-@mixin boton ($bg, $ancho:30px) {
-    background-color:$bg;
-    padding: $ancho;    
+@mixin boton($bg, $ancho: 30px) {
+    background-color: $bg;
+    padding: $ancho;
     color: white;
-    text-decoration: none;        
+    text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 100px;     
+    margin-top: 100px;
+}
+
+.boton-1 {
+    @include boton(pink, 20px);
+}
+
+.boton-2 {
+    @include boton(pink, 20px);
+}
+.boton-3 {
+    @include boton(pink, 20px);
+}
+
+.boton:hover {
+    background-color: pink;
+    color: black;
+    transition: 0.1s ease-in-out;
+}
+
+img{
+    width: 200px;
+    height: auto;
+}
+
+/* Formulario de contacto */
+
+.mainForm {
+    background-image: url(../img/marquise.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.form {
+    width: 450px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+.form h2 {
+    color: white;
+    text-align: center;
+    margin: o;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+
+.form input,
+textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+.form textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#botonForm {
+    background: rgb(15, 15, 15);
+    color: #fff;
+    padding: 20px;
+}
+#botonForm:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        width: 100%;
+    }
+}
+
+/* DONDE ESTAMOS */
+
+.ubicacion {
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+.mainUbicacion {
+    background-image: url(../img/flanAlargada.jpeg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .ubicacion {
+        width: 100%;
+    }
+}
+
+.infoUbicacion {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+.infoUbicacion h2 {
+    color: white;
+    text-align: center;
+    margin: o;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: monospace;
+}
+.mapaUbicacion {
+    text-align: center;
+    margin: o;
+    margin-bottom: 20px;
     
 }
 
-.boton-1{
-    @include boton(black, 20px);
+.mapaUbicacion h6 {
+    color: red;   
+    font-size: 30px;
+    font-family: monospace;
 }
 
-.boton-2{
-    @include boton(black, 20px);
+/* MENU */
+.mainMenu{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin-left: 100px;
+     
+       
+}
+
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: opx 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+.card{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .menuInfo p{
+    line-height: 1.5;
+    color: #6a6a6a;
 
 }
-.boton-3{
-    @include boton(black, 20px);
+
+.card .menuInfo h3{
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+.card .menuInfo a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: pink;
+    border: 1px solid pink;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.card .menuInfo a:hover{
+    background: pink;
+    color: white;
 
 }
 
+@media screen and (min-width: 450px) {
+    .card{
+        width: 100%;
 
+    }
+    
+}
