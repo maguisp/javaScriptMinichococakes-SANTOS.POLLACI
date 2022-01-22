@@ -22,7 +22,6 @@ fetch('productos.json')
         </div>
       </div>
         `
-
     });
 
     productos = JSON.parse(localStorage.getItem('carrito'))
@@ -37,9 +36,6 @@ fetch('productos.json')
                 productos.push(nuevoProducto)
                 localStorage.setItem('carrito', JSON.stringify(productos))
             }
-
-
         })
     })
-
 })

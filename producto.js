@@ -10,4 +10,5 @@ class Producto{
     }
 }
 
-let productos = []
+//let productos = []
+let producto = []
